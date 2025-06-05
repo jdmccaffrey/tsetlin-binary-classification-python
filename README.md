@@ -1,7 +1,7 @@
 # tsetlin-binary-classification-python
 Demo of Tsetlin binary classification (on a two-class subset of the Iris Dataset) using Python
 
-The code here refactors the more-or-less official Tsetlin binary classification demo at github.com/cair/TsetlinMachine/tree/master from Pyrex (a kind of hybrid of C and Python) to pure Python with NumPy.
+The code here (in file tsetlin_machine_binary.py) refactors the more-or-less official Tsetlin binary classification demo at github.com/cair/TsetlinMachine/tree/master from Pyrex (a kind of hybrid of C and Python) to pure Python with NumPy.
 
 ## Demo Output
 
