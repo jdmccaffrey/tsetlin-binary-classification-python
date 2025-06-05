@@ -1,5 +1,5 @@
 # tsetlin-binary-classification-python
-Demo of Tsetlin binary classification (on a two-class subset of the Iris Dataset) using Python
+Demo of Tsetlin binary classification on a two-class subset of the Iris Dataset, using Python
 
 The code here (in file tsetlin_machine_binary.py) refactors the more-or-less official Tsetlin binary classification demo at github.com/cair/TsetlinMachine/tree/master from Pyrex (a kind of hybrid of C and Python) to pure Python with NumPy.
 
@@ -82,10 +82,10 @@ The Tsetlin classifier requires four parameter values that must be determined by
     Setting s (random update inverse frequency) = 3.0
     Setting threshold (voting max/min) = 10
 
-Loosely, the number of clauses is essentially the number of rules. The number of states refers to the automata component. The s parameter adds some randomness during training, to avoid model overfitting. The threshold value acts to clip output so that some clauses don't dominate the prediction.
+Loosely, the number of clauses is essentially the number of rules, but the details are fairly complicated. The number of states refers to the automata component. The s parameter adds some randomness during training, to avoid model overfitting. The threshold value acts to clip output so that some clauses don't dominate a prediction.
 
 From a practical point of view, I think that Tsetlin binary classification isn't used much because having to encode numeric predictors to binary is somewhat time-consuming. On the other hand, for problem scenarios where the predictors are all categorical (e.g., color is red, blue, or green), the binary encoding isn't a major issue.
 
-The main source research paper is "The Tsetlin Machine - A Game Theoretic Bandit Driven Approach to Optimal Pattern Recognition with Propositional Logic" by Ole-Christoffer Granmo, 2021. It's available at arxiv.org/abs/1804.01508. The technique is name after M.L. Tsetlin, a Soviet Union mathematician from the 1960s.
+The main source research paper is "The Tsetlin Machine - A Game Theoretic Bandit Driven Approach to Optimal Pattern Recognition with Propositional Logic" by Ole-Christoffer Granmo, 2021. It's available at arxiv.org/abs/1804.01508. The technique is named after M.L. Tsetlin, a Soviet Union mathematician from the 1960s.
 
 Granmo has extended Tsetlin binary classification technique to multi-class classification, and to regression. I haven't looked at these techniques yet.
